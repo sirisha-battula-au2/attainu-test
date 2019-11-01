@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Express_Backend</title>
+  </head>
+  
+<body>
+    <div>
+    <form class="form-signin" action="/" method="POST">
+    <div class="container">
+      <div class="card">
+          <div class="card-body"> 
+      
+       
+    
+        
+    </div>
+            </div>
+</form>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+<script>
+    $.ajax({
+        url : '/getCities',
+        method : 'get',
+        dataType : 'json',
+        success : function(data)  {
+            
+            var cities = "";
+            for(var i=0; i<data.length; i++) {
+        
+            
+       
+    }
+    }
+</script>
+</body> 
+</html>
