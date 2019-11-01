@@ -1,19 +1,27 @@
-function convertStoI() { 
-    var r = parseInt("10"); 
-    var k = parseInt("-21"); 
-   var j = parseInt("             11");    
-   var h = parseInt("18            ");    
-    var g = parseInt("attainu10");
-
-    console.log('Integer value  ' + r); 
-    
-    console.log("integer value  " + k); 
-    
-    console.log('Integer value  ' + j); 
-    console.log('Integer value  ' + h); 
-    console.log('Integer value  ' + g); 
-   
-
-} 
-convertStoI(); 
+function strToInt(str) {
+    let i = 0, sign = 1, result = 0;
+    while (str.charAt(i) == ' ') {
+      i++;
+    }
+    if (str.charAt(i) == '+') {
+      i++;
+    }
+    else if (str.charAt(i) == '-') {
+      sign = -1;
+      i++;
+    }
+  
+    while (str.charAt(i) >= '0' && str.charAt(i) <= '9') {
+      res = res * 10 + (str.charAt(i) - 0);
+      i++;
+    }
+    return res * sign;
+  };
+  
+  console.log(strToInt("10"));
+  console.log(strToInt("-21"));
+  console.log(strToInt("   11"));
+  console.log(strToInt("18   "));
+  console.log(strToInt("attainu10"));
+ 
   
